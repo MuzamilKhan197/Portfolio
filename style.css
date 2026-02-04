@@ -1,0 +1,292 @@
+/* ================= RESET ================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e8e8e8;
+  color: #111111;
+  line-height: 1.6;
+  overflow-x: hidden;
+  animation: fadeInBody 1s ease;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  animation: slideDown 0.6s ease-out;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f5e20b;
+  /* animation: glowText 2.5s infinite alternate; */
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f5e20b;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1.25rem;
+  animation: fadeUp 1s ease forwards;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #D3C410;
+  text-align: center;
+  margin-bottom: 1rem;
+  /* animation: glowText 3s infinite alternate; */
+}
+
+h2 {
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  color: #b71be6 ;
+  margin-bottom: 10px;;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+
+}
+
+/* ================= INTRO ================= */
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  max-width: 100%;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  max-width: 900px;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  text-align: center;
+}
+
+.skills-container {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+/* ================= PROJECTS ================= */
+.project-cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: aliceblue;
+  padding: 1.5rem;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: cardFade 0.8s ease forwards;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px #f5e20b;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 7px;
+}
+
+.project-card a {
+  color: #f60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card h3 {
+  color: #b71be6 ;
+   margin-bottom: 2px;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px #38bdf8;
+  transform: scale(1.02);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 999px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* ================= MOBILE FIXES ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+    .project-card p ,.project-card a {
+   font-size: 11px;
+  }
+}
+
+/* ================= SMALL PHONES FIX ================= */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* Make project cards fully responsive on very small screens */
+  .project-cards {
+    grid-template-columns: 1fr; /* one card per row */
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes glowText {
+  0% { text-shadow: 0 0 5px #38bdf8, 0 0 10px #facc15; }
+  50% { text-shadow: 0 0 10px #facc15, 0 0 20px #38bdf8; }
+  100% { text-shadow: 0 0 5px #38bdf8, 0 0 15px #facc15; }
+} */
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
