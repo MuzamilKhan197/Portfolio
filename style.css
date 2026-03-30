@@ -59,6 +59,13 @@ body {
   color: #f5e20b;
 }
 
+/* Logo */
+
+.logo {
+  height: 50px; /* Adjust as needed */
+  width: 50px;
+}
+
 /* ================= SECTIONS ================= */
 section {
   max-width: 1100px;
