@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Muzamil Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <img class="logo" src="./assets/mlogo.png" alt="Muzamil Logo">
-    <ul class="nav-links">
-      <li><a href="./aboutme.html">About Me</a></li>
-      <li><a href="./skill.html">Skills</a></li>
-      <li><a href="./project.html">Projects</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
+    <div class="container">
 
-  <!-- Main Content -->
-  <section class="intro">
-    <h1>Welcome to My Portfolio</h1>
-    <h2>Introduction</h2>
-    <p>Hello! Welcome to My Muzamil Portfolio Website. Here you will find information about me, my skills, projects, and
-      how to contact me.</p>
-  </section>
+        <!-- NAVBAR -->
+        <header class="navbar">
+
+            <div class="logo">
+                <img src="assets/logo.png" alt="Muzamil Logo">
+            </div>
+
+            <!-- HAMBURGER -->
+            <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav>
+                <a class="active" href="index.html">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="about.html">
+                    <i class="fa-solid fa-user"></i> About
+                </a>
+                <a href="projects.html">
+                    <i class="fa-solid fa-briefcase"></i> Projects
+                </a>
+                <a href="contact.html">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </a>
+            </nav>
+
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="left">
+                <p class="welcome">Welcome to my site</p>
+
+                <h1>
+                    Hi, I’m <span class="blue">Muzamil</span>, a<br>
+                    Front-End <span class="orange">Developer</span>
+                </h1>
+
+                <p class="desc">
+                    I build modern and responsive websites using HTML, CSS, and JavaScript.
+                    I focus on creating clean, fast, and user-friendly web experiences.
+                </p>
+
+                <div class="buttons">
+                    <a href="contact.html" class="btn primary">Contact Me</a>
+                    <a href="projects.html" class="btn outline">View Projects</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>
+                <i class="fa-regular fa-copyright"></i> 2026 Muzamil Portfolio
+            </p>
+
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/sailk.khan.269492" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/muzamil-khan-076054285/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/MuzamilKhan197" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.instagram.com/muzamil._.002/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
-
 </html>

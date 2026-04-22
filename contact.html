@@ -2,39 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Muzamil Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo"> Contact Us </div>
-        <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./aboutme.html">About Me</a></li>
-            <li><a href="./project.html">Project</a></li>
-            <li><a href="./skill.html">Skill</a></li>
-        </ul>
-    </nav>
-    <!-- Contact Section -->
-    <section class="contact">
-        <h1>Contact Me</h1>
 
-        <div class="contact-info">
-            <p><b>Email:</b> <a href="mailto:muzamil.kse231@gmail.com">muzamil.kse231@gmail.com</a></p>
-            <!-- <p><b>Phone:</b> 0312 xxxxxxx</p> -->
-        </div>
+  <div class="container">
 
-        <h2>Send a Message</h2>
-        <form action="https://formspree.io/f/manankwk" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo">
+      </div>
+
+      <!-- HAMBURGER -->
+      <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav>
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+        <a href="about.html">
+          <i class="fa-solid fa-user"></i> About
+        </a>
+        <a href="projects.html">
+          <i class="fa-solid fa-briefcase"></i> Projects
+        </a>
+        <a class="active" href="contact.html">
+          <i class="fa-solid fa-envelope"></i> Contact
+        </a>
+      </nav>
+
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-page">
+
+      <div class="contact-header">
+        <h1>Contact <span class="blue">Me</span></h1>
+        <p class="project-dsec">
+          If you have any queries, project ideas, or collaboration requests,
+          feel free to contact me. I will respond as soon as possible.
+        </p>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form">
+
+        <h2>Get In Touch</h2>
+
+        <form action="https://formspree.io/f/manankwk" method="POST">
+
+          <div class="input-box">
+            <input type="text" name="name" required>
+            <label>Your Name</label>
+          </div>
+
+          <div class="input-box">
+            <input type="email" name="email" required>
+            <label>Your Email</label>
+          </div>
+
+          <div class="input-box">
+            <textarea name="message" rows="5" required></textarea>
+            <label>Your Message</label>
+          </div>
+
+          <button type="submit" class="cotact-btn ">
+            Send Message
+          </button>
+
         </form>
+
+      </div>
+
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <p>
+        <i class="fa-regular fa-copyright"></i> 2026 Muzamil Portfolio
+      </p>
+
+      <div class="footer-mail">
+        <a href="mailto:muzamil.kse231@gmail.com">
+          <i class="fa-solid fa-envelope"></i> muzamil.kse231@gmail.com
+        </a>
+      </div>
+
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/sailk.khan.269492" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/muzamil-khan-076054285/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/MuzamilKhan197" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.instagram.com/muzamil._.002/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+    </footer>
+
+  </div>
+
 </body>
 
 </html>
