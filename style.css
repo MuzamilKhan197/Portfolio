@@ -263,6 +263,28 @@ h1 {
     margin-right: auto;
 }
 
+.projects-search-box {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.projects-search-box input {
+    width: 60%;
+    text-align: center;
+    max-width: 400px;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.projects-search-box input:focus {
+    border-color: #008aaa;
+    box-shadow: 0 0 10px rgba(0, 138, 170, 0.3);
+}
+
 /* GRID */
 .project-grid {
     display: grid;
@@ -310,6 +332,73 @@ h1 {
 .project-card a:hover {
     color: #d1884f;
     text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 10px;
+    gap: 15px;
+}
+
+.pagination button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #008aaa, #00c2ff);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pagination button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 138, 170, 0.4);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* normal dot */
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hover effect */
+.dot:hover {
+    transform: scale(1.2);
+    background: #008aaa;
+}
+
+/* active dot */
+.dot.active {
+    width: 22px;
+    border-radius: 20px;
+    background: #008aaa;
+    box-shadow: 0 0 10px rgba(0, 138, 170, 0.5);
 }
 
 /* =========================

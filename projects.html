@@ -57,23 +57,27 @@
                 </div>
             </div>
 
+            <div class="projects-search-box">
+                <input type="text" id="searchInput" placeholder="Search projects... ">
+            </div>
+
             <!-- PROJECT GRID -->
             <div class="project-grid">
 
                 <!-- A -->
                 <div class="project-card">
                     <i class="fa-brands fa-apple"></i>
-                    <h3>Apple Clone UI</h3>
-                    <p>An Apple-inspired eCommerce UI clone featuring a sleek design, product showcase, and premium
-                        tech-store layout.</p>
+                    <h3>Apple Website UI Clone</h3>
+                    <p>A frontend UI clone of the Apple official website homepage, built with HTML, CSS, and JavaScript,
+                        focusing on modern layout, clean design, and responsiveness.</p>
                     <a href="https://appclone002.netlify.app/" target="_blank">View Project</a>
                 </div>
 
                 <div class="project-card">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <h3>Amazon Clone UI</h3>
-                    <p>An Amazon-inspired eCommerce UI with a modern layout, product sections, and responsive shopping
-                        experience design.</p>
+                    <h3>Amazon Website UI Clone</h3>
+                    <p>A frontend UI clone of the Amazon homepage, built using HTML, CSS, and JavaScript with a focus on
+                        layout structure, product sections, and responsive design.</p>
                     <a href="https://amzoneclone002.netlify.app/" target="_blank">View Project</a>
                 </div>
 
@@ -95,6 +99,14 @@
                     <a href="https://muzamilkhan197.github.io/Color-Flipper/" target="_blank">View Project</a>
                 </div>
 
+                <div class="project-card">
+                    <i class="fa-solid fa-plus-minus"></i>
+                    <h3>Counter Application</h3>
+                    <p>A simple interactive counter application built with HTML, CSS, and JavaScript that allows users
+                        to increase, decrease, and reset values using DOM manipulation.</p>
+                    <a href="https://muzamilkhan197.github.io/Counter-Application/" target="_blank">View Project</a>
+                </div>
+
                 <!-- J -->
                 <div class="project-card">
                     <i class="fa-solid fa-briefcase"></i>
@@ -107,9 +119,9 @@
                 <!-- P -->
                 <div class="project-card">
                     <i class="fa-solid fa-gamepad"></i>
-                    <h3>Pokémon App</h3>
-                    <p>A Pokémon-themed web app with a playful UI, character showcase, and smooth interactive design
-                        elements.</p>
+                    <h3>Pokémon Website UI Clone</h3>
+                    <p>A frontend UI clone of the official Pokémon website homepage, built with HTML, CSS, and
+                        JavaScript, focusing on layout, design accuracy, and responsiveness.</p>
                     <a href="https://pokemonclone002.netlify.app/" target="_blank">View Project</a>
                 </div>
 
@@ -131,9 +143,26 @@
                         experience.</p>
                     <a href="https://worldtrivia002.netlify.app/" target="_blank">View Project</a>
                 </div>
-
+                
             </div>
         </section>
+
+        <!-- PAGINATION BAR -->
+        <div class="pagination">
+            <button id="prevBtn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <span id="pageInfo"></span>
+
+            <button id="nextBtn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="dots"></div>
 
         <!-- FOOTER -->
         <footer class="footer">
@@ -159,6 +188,8 @@
         </footer>
 
     </div>
+
+    <script src="app.js"></script>
 
 </body>
 
