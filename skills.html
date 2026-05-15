@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Muzamil Portfolio</title>
+    <title>Skills - Muzamil Portfolio</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
@@ -14,7 +13,6 @@
 
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/favicon.png" type="image/x-png">
-
 </head>
 
 <body>
@@ -25,16 +23,16 @@
         <header class="navbar">
 
             <div class="logo">
-                <img src="assets/logo.png" alt="Muzamil Logo">
+                <img src="assets/logo.png" alt="logo">
             </div>
 
-            <!-- HAMBURGER -->
-            <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+            <div class="hamburger"
+                onclick="document.querySelector('nav').classList.toggle('active')">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
             <nav>
-                <a class="active" href="index.html">
+                <a href="index.html">
                     <i class="fa-solid fa-house"></i> Home
                 </a>
 
@@ -42,7 +40,7 @@
                     <i class="fa-solid fa-user"></i> About
                 </a>
 
-                <a href="skills.html">
+                <a class="active" href="skills.html">
                     <i class="fa-solid fa-code"></i> Skills
                 </a>
 
@@ -57,28 +55,46 @@
 
         </header>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
+        <!-- SKILLS SECTION -->
+        <section class="skills-section">
 
-            <div class="left">
-                <p class="welcome">Welcome to my site</p>
+            <h2 class="skills-title">My Skills</h2>
 
-                <h1>
-                    Hi, I’m <span class="blue">Muzamil</span>, a<br>
-                    Front-End <span class="orange">Developer</span>
-                </h1>
-
-                <p class="desc">
-                    I build modern and responsive websites using HTML, CSS, and JavaScript.
-                    I focus on creating clean, fast, and user-friendly web experiences.
-                </p>
-
-                <div class="buttons">
-                    <a href="contact.html" class="btn primary">Contact Me</a>
-                    <a href="projects.html" class="btn outline">View Projects</a>
+            <div class="skill">
+                <div class="skill-name">
+                    <i class="fa-brands fa-html5"></i> HTML5
+                </div>
+                <div class="progress-bar">
+                    <div class="progress htmlcss"></div>
                 </div>
             </div>
 
+            <div class="skill">
+                <div class="skill-name">
+                    <i class="fa-brands fa-css3-alt"></i> CSS3
+                </div>
+                <div class="progress-bar">
+                    <div class="progress htmlcss"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <i class="fa-brands fa-js"></i> JavaScript
+                </div>
+                <div class="progress-bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <i class="fa-solid fa-mobile-screen"></i> Responsive Design
+                </div>
+                <div class="progress-bar">
+                    <div class="progress responsive"></div>
+                </div>
+            </div>
         </section>
 
         <!-- FOOTER -->
@@ -86,8 +102,7 @@
             <p>
                 <i class="fa-regular fa-copyright"></i> 2026 Muzamil Portfolio
             </p>
-
-            <div class="footer-icons">
+             <div class="footer-icons">
                 <a href="https://www.facebook.com/sailk.khan.269492" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook"></i>
                 </a>

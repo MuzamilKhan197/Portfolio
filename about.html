@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Muzamil Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/favicon.png" type="image/x-png">
+</head>
 
 <body>
 
@@ -18,12 +24,11 @@
         <header class="navbar">
 
             <div class="logo">
-                <img src="assets/logo.png" alt="">
+                <img src="assets/logo.png" alt="Muzamil Logo">
             </div>
 
             <!-- HAMBURGER -->
-            <div class="hamburger"
-                onclick="document.querySelector('nav').classList.toggle('active')">
+            <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
@@ -31,12 +36,19 @@
                 <a href="index.html">
                     <i class="fa-solid fa-house"></i> Home
                 </a>
+
                 <a class="active" href="about.html">
                     <i class="fa-solid fa-user"></i> About
                 </a>
+
+                <a href="skills.html">
+                    <i class="fa-solid fa-code"></i> Skills
+                </a>
+
                 <a href="projects.html">
                     <i class="fa-solid fa-briefcase"></i> Projects
                 </a>
+
                 <a href="contact.html">
                     <i class="fa-solid fa-envelope"></i> Contact
                 </a>
@@ -47,73 +59,60 @@
         <!-- ABOUT SECTION -->
         <section class="hero">
 
+            <!-- LEFT SIDE -->
             <div class="left">
 
                 <h2 class="aboutme-title">About Me</h2>
 
                 <h1>
-                    I’m <span class="blue">Muzamil</span><br>
+                    I’m <span class="blue">Muzamil Khan</span><br>
                     Front-End <span class="orange">Developer</span>
                 </h1>
 
                 <p class="desc">
-                    I am a passionate learner in Web Designing and Front-End Development. I enjoy building modern,
-                    responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+                    I am a passionate Front-End Developer focused on creating
+                    modern, responsive, and user-friendly websites using
+                    HTML, CSS, and JavaScript.
                 </p>
 
                 <p class="desc">
-                    My journey started with understanding how the internet works, and I have learned core technologies
-                    like HTML5, CSS3, Flexbox, Bootstrap, animations, and responsive design principles. I am currently
-                    improving my JavaScript skills to create interactive web experiences.
+                    I enjoy transforming ideas into interactive web experiences
+                    and continuously improving my skills in web development,
+                    responsive design, animations, and modern UI design.
                 </p>
 
+                <!-- BUTTONS -->
                 <div class="buttons">
-                    <a href="projects.html" class="btn primary">View Projects</a>
-                    <a href="contact.html" class="btn outline">Contact Me</a>
+
+                    <a href="projects.html" class="btn primary">
+                        View Projects
+                    </a>
+
+                    <a href="assets/Muzamil-CV.pdf" download class="btn outline">
+                        Download CV
+                    </a>
+
                 </div>
 
             </div>
 
+            <!-- RIGHT SIDE -->
             <div class="right">
+
                 <div class="shape"></div>
+
                 <img src="./assets/person.png" alt="profile">
+
             </div>
 
         </section>
 
-        <!-- SKILLS SECTION -->
-        <section class="skills-section">
-
-            <h2 class="skills-title">My Skills</h2>
-
-
-            <div class="skill">
-                <div class="skill-name">HTML & CSS</div>
-                <div class="progress-bar">
-                    <div class="progress htmlcss"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="skill-name">Responsive Design</div>
-                <div class="progress-bar">
-                    <div class="progress responsive"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="skill-name">JavaScript </div>
-                <div class="progress-bar">
-                    <div class="progress js"></div>
-                </div>
-            </div>
-
-        </section>
 
         <!-- FOOTER -->
-     <footer class="footer">
-            <p><i class="fa-regular fa-copyright" style="font-size: large;"></i> 2026 Muzamil Portfolio</p>
-
+        <footer class="footer">
+            <p>
+                <i class="fa-regular fa-copyright"></i> 2026 Muzamil Portfolio
+            </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com/sailk.khan.269492" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook"></i>
@@ -127,14 +126,11 @@
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="https://www.instagram.com/muzamil._.002/" target="_blank"rel="noopener noreferrer">
+                <a href="https://www.instagram.com/muzamil._.002/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </footer>
-
     </div>
-
 </body>
-
 </html>
