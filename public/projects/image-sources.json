@@ -1,0 +1,146 @@
+[
+  {
+    "id": "veyro",
+    "name": "Veyro",
+    "kind": "screenshot",
+    "file": "/projects/veyro.webp",
+    "source": "https://veyro2.netlify.app/",
+    "bytes": 11828
+  },
+  {
+    "id": "hcm-lite",
+    "name": "HCM Lite",
+    "kind": "screenshot",
+    "file": "/projects/hcm-lite.webp",
+    "source": "https://hcm-client-seven.vercel.app/",
+    "bytes": 25540
+  },
+  {
+    "id": "apple-website-clone",
+    "name": "Apple Website UI Clone",
+    "kind": "screenshot",
+    "file": "/projects/apple-website-clone.webp",
+    "source": "https://appclone002.netlify.app/",
+    "bytes": 30064
+  },
+  {
+    "id": "amazon-website-clone",
+    "name": "Amazon Website UI Clone",
+    "kind": "screenshot",
+    "file": "/projects/amazon-website-clone.webp",
+    "source": "https://amzoneclone002.netlify.app/",
+    "bytes": 76392
+  },
+  {
+    "id": "blog-website",
+    "name": "Blog Website",
+    "kind": "screenshot",
+    "file": "/projects/blog-website.webp",
+    "source": "https://muzamilblog.netlify.app/",
+    "bytes": 50528
+  },
+  {
+    "id": "color-flipper",
+    "name": "Color Flipper",
+    "kind": "screenshot",
+    "file": "/projects/color-flipper.webp",
+    "source": "https://muzamilkhan197.github.io/Color-Flipper/",
+    "bytes": 13462
+  },
+  {
+    "id": "counter-application",
+    "name": "Counter Application",
+    "kind": "screenshot",
+    "file": "/projects/counter-application.webp",
+    "source": "https://muzamilkhan197.github.io/Counter-Application/",
+    "bytes": 14890
+  },
+  {
+    "id": "job-portal-ui",
+    "name": "Job Portal UI",
+    "kind": "screenshot",
+    "file": "/projects/job-portal-ui.webp",
+    "source": "https://hiringmineclone002.netlify.app/",
+    "bytes": 33310
+  },
+  {
+    "id": "pokemon-website-clone",
+    "name": "Pokémon Website UI Clone",
+    "kind": "screenshot",
+    "file": "/projects/pokemon-website-clone.webp",
+    "source": "https://pokemonclone002.netlify.app/",
+    "bytes": 49092
+  },
+  {
+    "id": "dice-game",
+    "name": "Dice Game",
+    "kind": "screenshot",
+    "file": "/projects/dice-game.webp",
+    "source": "https://muzamilkhan197.github.io/dice-game/",
+    "bytes": 12102
+  },
+  {
+    "id": "calculator",
+    "name": "Calculator",
+    "kind": "screenshot",
+    "file": "/projects/calculator.webp",
+    "source": "https://muzamilkhan197.github.io/calculator/",
+    "bytes": 8150
+  },
+  {
+    "id": "taskflow",
+    "name": "Taskflow",
+    "kind": "screenshot",
+    "file": "/projects/taskflow.webp",
+    "source": "https://taskflow02.vercel.app/",
+    "bytes": 25880
+  },
+  {
+    "id": "todo-list",
+    "name": "To-Do List",
+    "kind": "screenshot",
+    "file": "/projects/todo-list.webp",
+    "source": "https://todolist-002.netlify.app/",
+    "bytes": 10624
+  },
+  {
+    "id": "weatherhub",
+    "name": "WeatherHub",
+    "kind": "screenshot",
+    "file": "/projects/weatherhub.webp",
+    "source": "https://weatherhub02.netlify.app",
+    "bytes": 28572
+  },
+  {
+    "id": "number-guess",
+    "name": "Number Guess",
+    "kind": "screenshot",
+    "file": "/projects/number-guess.webp",
+    "source": "https://num-guess2.netlify.app",
+    "bytes": 17810
+  },
+  {
+    "id": "tic-tac-toe",
+    "name": "Tic Tac Toe",
+    "kind": "screenshot",
+    "file": "/projects/tic-tac-toe.webp",
+    "source": "https://tic-tac02.netlify.app",
+    "bytes": 8872
+  },
+  {
+    "id": "liverr",
+    "name": "LIVERR",
+    "kind": "concept",
+    "file": "/projects/liverr-concept.webp",
+    "source": "Custom concept artwork",
+    "bytes": 39568
+  },
+  {
+    "id": "aesthetique",
+    "name": "AESTHETIQUE Clothing Web",
+    "kind": "concept",
+    "file": "/projects/aesthetique-concept.webp",
+    "source": "Custom concept artwork",
+    "bytes": 95330
+  }
+]

@@ -1,0 +1,186 @@
+.stack-art {
+  width: 100%;
+  max-width: 580px;
+  margin-inline: auto;
+  color: var(--text, #252721);
+  contain: layout style;
+}
+
+.stack-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.stack-plane-start {
+  stop-color: #f9f8f3;
+  stop-opacity: 0.98;
+}
+.stack-plane-end {
+  stop-color: #e9e8e1;
+  stop-opacity: 0.98;
+}
+.stack-plane {
+  fill: url(#stack-plate);
+  stroke: #b6b8ad;
+  stroke-width: 1;
+}
+.stack-plane-side {
+  fill: #dedfd5;
+  stroke: #b6b8ad;
+  stroke-width: 0.8;
+}
+.stack-guideline {
+  stroke: currentColor;
+  opacity: 0.1;
+  stroke-width: 0.8;
+}
+.stack-corner {
+  stroke: currentColor;
+  opacity: 0.23;
+  stroke-width: 0.8;
+}
+.stack-tiny {
+  fill: currentColor;
+  opacity: 0.45;
+  font-family: monospace;
+  font-size: 8px;
+  letter-spacing: 1.1px;
+}
+.stack-inner-grid {
+  stroke: currentColor;
+  opacity: 0.11;
+  stroke-width: 0.8;
+}
+.stack-circuit {
+  stroke: currentColor;
+  opacity: 0.3;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+.stack-detail {
+  stroke: currentColor;
+  opacity: 0.33;
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+.stack-accent-line {
+  stroke: var(--accent, #da542b);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.stack-node {
+  fill: var(--accent, #da542b);
+}
+.stack-interface-outline {
+  stroke: currentColor;
+  opacity: 0.12;
+  stroke-width: 0.8;
+}
+.stack-orb-shadow {
+  fill: #813c22;
+  opacity: 0.08;
+}
+.stack-orbit {
+  stroke: var(--accent, #da542b);
+  stroke-width: 0.8;
+  opacity: 0.28;
+}
+.stack-orbit-outer {
+  opacity: 0.4;
+}
+.stack-label {
+  stroke: var(--muted, #75776e);
+  stroke-width: 0.7;
+}
+.stack-label circle {
+  fill: var(--muted, #75776e);
+  stroke: none;
+}
+.stack-label text {
+  stroke: none;
+  fill: var(--muted, #75776e);
+  font-size: 8.5px;
+  font-family: monospace;
+  letter-spacing: 1.1px;
+}
+.stack-label .stack-label-number {
+  fill: var(--accent, #da542b);
+}
+.stack-caption rect {
+  fill: var(--surface, #fffef9);
+  stroke: var(--border, #dedfd7);
+  stroke-width: 0.7;
+}
+.stack-caption text {
+  font-family: monospace;
+  font-size: 9px;
+  fill: var(--muted, #75776e);
+}
+.stack-caption .stack-caption-code {
+  fill: var(--accent, #da542b);
+  font-size: 10px;
+}
+
+.dark .stack-plane-start {
+  stop-color: #30332d;
+}
+.dark .stack-plane-end {
+  stop-color: #22251f;
+}
+.dark .stack-plane {
+  stroke: #55594f;
+}
+.dark .stack-plane-side {
+  fill: #1b1e19;
+  stroke: #55594f;
+}
+.dark .stack-orb-shadow {
+  fill: #070a05;
+  opacity: 0.3;
+}
+.dark .stack-inner-grid {
+  opacity: 0.14;
+}
+
+.stack-layer-interface {
+  animation: stack-plane-float 7s ease-in-out infinite;
+}
+.stack-layer-logic {
+  animation: stack-plane-float 7s ease-in-out -0.8s infinite;
+}
+.stack-layer-data {
+  animation: stack-plane-float 7s ease-in-out -1.6s infinite;
+}
+.stack-ball {
+  animation: stack-ball-float 7s ease-in-out infinite;
+}
+
+@keyframes stack-plane-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes stack-ball-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-11px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stack-layer,
+  .stack-ball {
+    animation: none;
+  }
+}
